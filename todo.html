@@ -17,7 +17,7 @@
   var inp=document.getElementById("input")
   function add(){
     var listitem=document.createElement("li")
-    listitem.textContent=input.value
+    listitem.innerHTML=input.value+"<button onclick='deleteitem(event)'>Delete</button>"
     ul.append(listitem)
 
      
@@ -27,4 +27,11 @@
 
     event.target.parentElement.remove()
   }
-</script>
+  
+
+    
+  
+
+
+
+</script>  
